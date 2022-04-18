@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
             var price=edtFrPrice.text.toString().toInt()
             var fruit=Fruit(name,desc,price)
 
-            /*the below line code means to create the database if not there and if there then
-             update in it and make the table if not */
+            /*the below line code means to create the database if not there and if there
+            then update in it and make the table if not */
             var db=DBHelper(this)
 
             var flag=db.insert(fruit)
