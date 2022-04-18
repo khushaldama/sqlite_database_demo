@@ -21,7 +21,7 @@ class DBHelper(var context: Context) : SQLiteOpenHelper(context, DB_NAME, null, 
 
     override fun onCreate(p0: SQLiteDatabase?) {
         var query = "CREATE TABLE $TB_NAME($FR_ID INTEGER PRIMARY KEY AUTOINCREMENT" +
-                ",$FR_NAME TEXT,$FR_DESC TEXT,$FR_PRICE)"
+                ",$FR_NAME TEXT,$FR_DESC TEXT,$FR_PRICE INTEGER)"
 
         /*to upgrade the table create query
         var query="CREATE TABLE $TB_NAME($FR_ID INTEGER PRIMARY KEY AUTOINCREMENT" +
